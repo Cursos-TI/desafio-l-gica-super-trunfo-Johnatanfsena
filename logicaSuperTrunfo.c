@@ -68,10 +68,39 @@ int main(){
    printf("Densidade Populacional: %.2f habitantes\n", densidade);
    printf("PIB per capita: %.2f reais\n",pibpercapita);
 
+  if (populacao1 > populacao1) { 
+    printf("Carta 1 ganhou!\n");
+  }
+  else {
+    printf("Carta 2 ganhou!\n");
+  }
 
-
-
-
+  if (area1 > area2) {
+    printf("Carta 1 ganhou!\n") 
+  }
+  else{
+    printf("Carta 2 ganhou!\n");
+  }
+  if(pib1 > pib2) {
+    printf("Carta 1 ganhou!\n") }
+  else{
+    printf("Carta 2 ganhou!\n");
+  }
+  if(numero1 > numero2){
+    printf("Carta 1 ganhou!\n") }
+  else{
+    printf("Carta 2 ganhou!\n");
+  }
+  if(densidade > densidade1){
+    printf("Carta 1 ganhou!\n") }
+  else{
+    printf("Carta 2 ganhou!\n");
+  }
+  if (pibpercapita > pibpercapita1){
+    printf("Carta 1 ganhou!\n") }
+  else{
+    printf("Carta 2 ganhou!\n");
+  }
     return 0;
 }
 
