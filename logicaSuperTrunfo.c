@@ -19,7 +19,7 @@ int main(){
    printf("Cidade: \n");
    scanf(" %19[^\n]", cidade1);
    printf("População: \n");
-   scanf("%u", &populacao1);
+   scanf("%lu", &populacao1);
    printf("Área em km²:\n");
    scanf("%f", &area1);
    printf("PIB: \n");
@@ -34,10 +34,7 @@ int main(){
    printf("Densidade Populacional: %.2f habitantes\n", densidade);
    printf("PIB per capita: %.2f reais\n\n",pibpercapita);
 
-   // Declarando a segunda carta //
-
-    // declarando variaveis//
-    
+   // Declarando a segunda carta //   
     char estado2[20], codigo2[20], cidade2[20];
     unsigned long int populacao2;
     int numero2;    
@@ -53,7 +50,7 @@ int main(){
    printf("Cidade: \n");
    scanf(" %19[^\n]", cidade2);
    printf("População: \n");
-   scanf("%u", &populacao2);
+   scanf("%lu", &populacao2);
    printf("Área em km²:\n");
    scanf("%f", &area2);
    printf("PIB: \n");
@@ -65,43 +62,36 @@ int main(){
    float densidade1 = populacao2 / area2;
    float pibpercapita1 = (pib2 *1000000000) / populacao2;
 
-   printf("Densidade Populacional: %.2f habitantes\n", densidade);
-   printf("PIB per capita: %.2f reais\n",pibpercapita);
+   printf("Densidade Populacional: %.2f habitantes\n", densidade1);
+   printf("PIB per capita: %.2f reais\n\n",pibpercapita1);
 
-  if (populacao1 > populacao2) { 
-    printf("Carta 1 ganhou!\n");
-  }
-  else {
-    printf("Carta 2 ganhou!\n");
-  }
+   printf("Vencedores por cada categoria! \n");
 
-  if(area1 > area2) {
-    printf("Carta 1 ganhou!\n");
-  }
-  else{
-    printf("Carta 2 ganhou!\n");
-  }
-  if(pib1 > pib2) {
-    printf("Carta 1 ganhou!\n"); 
-  }
-  else{
-    printf("Carta 2 ganhou!\n");
-  }
-  if(numero1 > numero2){
-    printf("Carta 1 ganhou!\n"); }
-  else{
-    printf("Carta 2 ganhou!\n");
-  }
-  if(densidade > densidade1){
-    printf("Carta 1 ganhou!\n"); }
-  else{
-    printf("Carta 2 ganhou!\n");
-  }
-  if (pibpercapita > pibpercapita1){
-    printf("Carta 1 ganhou!\n"); }
-  else{
-    printf("Carta 2 ganhou!\n");
-  }
+  if (populacao1 > populacao2) 
+       {printf("Carta 1 ganhou!\n");}
+  else {printf("Carta 2 ganhou!\n");}
+
+  if(area1 > area2) 
+      {printf("Carta 1 ganhou!\n");}
+  else{printf("Carta 2 ganhou!\n");}
+
+  if(pib1 > pib2) 
+      {printf("Carta 1 ganhou!\n");}
+  else{printf("Carta 2 ganhou!\n");}
+
+  if(numero1 > numero2) 
+      {printf("Carta 1 ganhou!\n"); }
+  else{printf("Carta 2 ganhou!\n");}
+
+  if(densidade > densidade1) 
+      {printf("Carta 1 ganhou!\n");}
+  else{printf("Carta 2 ganhou!\n");}
+
+  if(pibpercapita > pibpercapita1)
+      {printf("Carta 1 ganhou!\n");}
+  else{printf("Carta 2 ganhou!\n");}
+
+
     return 0;
 }
 
