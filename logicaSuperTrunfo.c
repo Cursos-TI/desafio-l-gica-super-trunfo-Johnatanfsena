@@ -2,7 +2,7 @@
 
 int main(){
 
-    // declarando variaveis//
+    // Declarando variaveis//
     
     char estado1[20], codigo1[20], cidade1[20];
     unsigned long int populacao1;
@@ -61,43 +61,44 @@ int main(){
    printf("Numero de pontos turisticos:\n");
    scanf("%d", &numero2);
 
-   // Calculos da primeira carta //
+   // Calculos da segunda carta //
    float densidade1 = populacao2 / area2;
-   float pibpercapita1 = (pib1 *1000000000) / populacao1;
+   float pibpercapita1 = (pib2 *1000000000) / populacao2;
 
    printf("Densidade Populacional: %.2f habitantes\n", densidade);
    printf("PIB per capita: %.2f reais\n",pibpercapita);
 
-  if (populacao1 > populacao1) { 
+  if (populacao1 > populacao2) { 
     printf("Carta 1 ganhou!\n");
   }
   else {
     printf("Carta 2 ganhou!\n");
   }
 
-  if (area1 > area2) {
-    printf("Carta 1 ganhou!\n") 
+  if(area1 > area2) {
+    printf("Carta 1 ganhou!\n");
   }
   else{
     printf("Carta 2 ganhou!\n");
   }
   if(pib1 > pib2) {
-    printf("Carta 1 ganhou!\n") }
+    printf("Carta 1 ganhou!\n"); 
+  }
   else{
     printf("Carta 2 ganhou!\n");
   }
   if(numero1 > numero2){
-    printf("Carta 1 ganhou!\n") }
+    printf("Carta 1 ganhou!\n"); }
   else{
     printf("Carta 2 ganhou!\n");
   }
   if(densidade > densidade1){
-    printf("Carta 1 ganhou!\n") }
+    printf("Carta 1 ganhou!\n"); }
   else{
     printf("Carta 2 ganhou!\n");
   }
   if (pibpercapita > pibpercapita1){
-    printf("Carta 1 ganhou!\n") }
+    printf("Carta 1 ganhou!\n"); }
   else{
     printf("Carta 2 ganhou!\n");
   }
